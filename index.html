@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>WheelRank AI</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<header>
+
+    <div class="logo">
+
+        <img src="Wheelrank.png" alt="WheelRank AI">
+
+        <div>
+
+            <h1>WheelRank AI</h1>
+
+            <p>Your Personal AI Bike Expert</p>
+
+        </div>
+
+    </div>
+
+</header>
+
+<div class="dashboard">
+
+<div class="card">
+
+<h2>🏍 Find Your Perfect Bike</h2>
+
+<p>
+Answer a few questions and WheelRank AI will recommend the best bike for you.
+</p>
+
+<label>Budget</label>
+
+<select id="budget">
+
+<option>Under $2,000</option>
+<option>$2,000 - $5,000</option>
+<option>$5,000 - $8,000</option>
+<option>$8,000+</option>
+
+</select>
+
+<label>Experience</label>
+
+<select id="experience">
+
+<option>Beginner</option>
+<option>Intermediate</option>
+<option>Advanced</option>
+
+</select>
+
+<label>Bike Type</label>
+
+<select id="bikeType">
+
+<option>E Bike</option>
+<option>Dirt Bike</option>
+<option>Wheelie Bike</option>
+
+</select>
+
+<label>Main Goal</label>
+
+<select id="goal">
+
+<option>Learn Wheelies</option>
+<option>Street Riding</option>
+<option>Trail Riding</option>
+<option>Racing</option>
+
+</select>
+
+<button id="rankBtn">
+
+Find My Bike
+
+</button>
+
+</div>
+
+<div class="card">
+
+<h2>🤖 AI Recommendation</h2>
+
+<h1 id="bikeName">
+
+Waiting...
+
+</h1>
+
+<div class="score">
+
+<h3>WheelRank Score</h3>
+
+<h2 id="score">
+
+--
+
+</h2>
+
+</div>
+
+<ul id="reasons">
+
+<li>Press "Find My Bike".</li>
+
+</ul>
+
+</div>
+
+</div>
+<div class="builder">
+
+    <div class="card">
+
+        <h2>🔧 AI Bike Builder</h2>
+
+        <p>
+            Tell WheelRank AI about your bike and we'll create a custom upgrade plan.
+        </p>
+
+        <label>Choose Your Bike</label>
+
+        <select id="buildBike">
+
+            <optgroup label="⚡ E Bikes">
+
+                <option>Surron Light Bee X</option>
+                <option>Surron Ultra Bee</option>
+                <option>Talaria Sting R</option>
+                <option>Talaria XXX</option>
+                <option>E Ride Pro SS</option>
+                <option>Rawrr Mantis</option>
+                <option>79Bike Falcon</option>
+                <option>Ventus One</option>
+
+            </optgroup>
+
+            <optgroup label="🏍 Dirt Bikes">
+
+                <option>Yamaha YZ125</option>
+                <option>Honda CRF250R</option>
+                <option>Kawasaki KX250</option>
+                <option>KTM 125 SX</option>
+
+            </optgroup>
+
+            <optgroup label="🚲 Wheelie Bikes">
+
+                <option>SE Big Flyer 29</option>
+                <option>SE Fast Ripper 29</option>
+                <option>Throne Goon 29</option>
+                <option>PK Ripper</option>
+
+            </optgroup>
+
+        </select>
+
+        <label>Your Height</label>
+
+        <input
+            id="height"
+            type="text"
+            placeholder="Example: 5'9"
+        >
+
+        <label>Choose Your Build</label>
+
+        <select id="build">
+
+            <option>Wheelie Build</option>
+            <option>Street Build</option>
+            <option>Trail Build</option>
+            <option>Race Build</option>
+            <option>Budget Build</option>
+
+        </select>
+
+        <label>Describe Your Dream Bike</label>
+
+        <textarea
+            id="dream"
+            placeholder="Example: Matte black with blue rims, Warp 9 pegs, taller handlebars, and street tires."
+        ></textarea>
+
+        <button id="generateBtn">
+
+            ✨ Generate AI Build
+
+        </button>
+
+    </div>
+
+    <div class="card">
+
+        <h2>🧠 AI Build Results</h2>
+
+        <div id="designText">
+
+            Your custom AI build will appear here.
+
+        </div>
+
+    </div>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
